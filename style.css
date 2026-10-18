@@ -546,17 +546,6 @@ ul, ol { list-style: none; }
 .tt__bars i { display: block; height: 9px; width: var(--w); border-radius: 5px; background: linear-gradient(90deg, #ff8fa3, #b69cff); }
 .tt__bars em { font: 400 14px/1 var(--serif); font-style: normal; text-align: right; color: #16131d; }
 
-.pp { background-color: #fffdf7; background-image: linear-gradient(rgba(47,76,140,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(47,76,140,.07) 1px, transparent 1px); background-size: 16px 16px; }
-.pp svg { display: block; width: 100%; height: auto; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.pp__pipe { stroke: #c3cddc; stroke-width: 7; }
-.pp__coil { stroke: #5b6b82; stroke-width: 2.5; fill: #fff; }
-.pp__comp { stroke: #5b6b82; stroke-width: 2.5; fill: #fff; }
-.pp__fan { stroke: #5b6b82; stroke-width: 2; }
-.pp__hl { stroke: #3156e0; stroke-width: 2.5; }
-.pp__cold circle { fill: #2574de; stroke: #fff; stroke-width: 1.5; }
-.pp__hot circle { fill: #e84034; stroke: #fff; stroke-width: 1.5; }
-.pp__warm circle { fill: #f0a01e; stroke: #fff; stroke-width: 1.5; }
-.pp__heat { stroke: #e84034; stroke-width: 2.5; }
 
 .float {
   position: absolute; display: inline-flex; align-items: center; gap: 10px;
