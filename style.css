@@ -546,6 +546,14 @@ ul, ol { list-style: none; }
 .tt__bars i { display: block; height: 9px; width: var(--w); border-radius: 5px; background: linear-gradient(90deg, #ff8fa3, #b69cff); }
 .tt__bars em { font: 400 14px/1 var(--serif); font-style: normal; text-align: right; color: #16131d; }
 
+.pp { background-color: #fffdf7; background-image: linear-gradient(rgba(47,76,140,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(47,76,140,.07) 1px, transparent 1px); background-size: 16px 16px; }
+.pp svg { display: block; width: 100%; height: auto; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.pp__ink { stroke: #1d2b4f; stroke-width: 3.5; }
+.pp__ghost { stroke: #e8553d; stroke-width: 2; stroke-dasharray: 3 5; opacity: .5; }
+.pp__ball { stroke: #e8553d; stroke-width: 3; fill: #fbdcd5; }
+.pp__spoke { stroke: #e8553d; stroke-width: 3; }
+.pp__box { stroke: #2f6fdb; stroke-width: 3; fill: #dbe7fb; }
+
 .float {
   position: absolute; display: inline-flex; align-items: center; gap: 10px;
   padding: 10px 16px 10px 10px; border-radius: 999px;
