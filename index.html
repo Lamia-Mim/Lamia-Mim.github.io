@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lamia Islam Mim — Web Developer</title>
+  <meta name="description" content="Portfolio of Lamia Islam Mim, a Computer Science & Engineering graduate from North South University working on web development, e-commerce and data-driven research.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Intro loader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__name">
+      <span class="line"><span>Lamia</span></span>
+      <span class="line"><span><em>Islam</em></span></span>
+      <span class="line"><span>Mim</span></span>
+    </div>
+    <div class="preloader__foot">
+      <span>Portfolio — 2026</span>
+      <span class="preloader__count"><b id="loaderCount">0</b>%</span>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav__pill">
+      <a href="#top" class="brand" aria-label="Lamia Islam Mim, back to top">LM<span>.</span></a>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <span class="nav__indicator" id="navIndicator" aria-hidden="true"></span>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Switch colour theme">
+          <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <a class="btn btn--pill" href="assets/Lamia_Islam_Mim_CV.pdf" download>Resume</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Mobile">
+      <a href="#work"><small>01</small>Work</a>
+      <a href="#about"><small>02</small>About</a>
+      <a href="#skills"><small>03</small>Skills</a>
+      <a href="#education"><small>04</small>Education</a>
+      <a href="#contact"><small>05</small>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:lamiaislammim.work@gmail.com">lamiaislammim.work@gmail.com</a>
+      <div><a href="https://www.linkedin.com/in/lamia-islam-mim/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Lamia-Mim" target="_blank" rel="noopener">GitHub</a></div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="wrap hero__grid">
+        <div class="hero__intro">
+          <div class="hero__meta">
+            <span class="badge"><span class="dot" aria-hidden="true"></span>Available for work</span>
+            <span class="hero__meta-r">Dhaka, Bangladesh</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="line"><span>Building</span></span>
+            <span class="line"><span><em class="grad">thoughtful</em> digital</span></span>
+            <span class="line"><span>experiences.</span></span>
+          </h1>
+
+          <p class="hero__role">
+            I'm <strong>Lamia Islam Mim</strong>, a
+            <span class="rotator" id="rotator" aria-live="off">
+              <span class="rotator__list">
+                <span>Full-stack Web Developer</span>
+                <span>E-commerce Builder</span>
+                <span>Data Researcher</span>
+                <span>Team Leader</span>
+              </span>
+            </span>
+          </p>
+
+          <p class="hero__lead">
+            Computer Science &amp; Engineering graduate from North South University. I turn real problems into
+            clean, usable products across web development, e-commerce and data-driven research.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--grad" href="#work" data-magnetic>
+              Explore my work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="assets/Lamia_Islam_Mim_CV.pdf" download data-magnetic>Download CV</a>
+          </div>
+        </div>
+
+        <figure class="portrait" id="portrait">
+          <div class="portrait__frame" id="portraitFrame">
+            <!--
+              TO ADD YOUR PHOTO:
+              Save your photo inside the "assets" folder with the name  photo.jpg
+              (portrait / vertical photos look best). Refresh the page and it will appear here.
+              Until then, the monogram below is shown automatically.
+            -->
+            <img src="assets/photo.jpg" alt="Portrait of Lamia Islam Mim" onerror="this.closest('.portrait').classList.add('no-photo')">
+            <div class="portrait__placeholder" aria-hidden="true">
+              <span>L<em>M</em></span>
+            </div>
+            <div class="portrait__shine" aria-hidden="true"></div>
+          </div>
+          <figcaption class="portrait__cap">
+            <span>Lamia Islam Mim</span>
+            <span>CSE · North South University</span>
+          </figcaption>
+          <div class="portrait__ring" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs><path id="circle" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#circle">open to work • web developer • open to work • web developer • </textPath></text>
+            </svg>
+            <span>✦</span>
+          </div>
+        </figure>
+      </div>
+
+      <div class="wrap bento">
+        <div class="tile spot">
+          <p class="tile__label">Local time</p>
+          <p class="tile__big" id="clock">--:--</p>
+          <p class="tile__sub">Dhaka, GMT+6</p>
+        </div>
+        <div class="tile spot">
+          <p class="tile__label">Featured projects</p>
+          <p class="tile__big"><span data-count="4" data-pad="2">00</span></p>
+          <p class="tile__sub">E-commerce · Social impact · ML · AI</p>
+        </div>
+        <div class="tile spot">
+          <p class="tile__label">Research data</p>
+          <p class="tile__big"><span data-count="209">0</span><small>cases</small></p>
+          <p class="tile__sub">across 49 districts</p>
+        </div>
+        <div class="tile tile--stack spot">
+          <p class="tile__label">Core stack</p>
+          <ul class="mini-tags"><li>React.js</li><li>MongoDB</li><li>Firebase</li><li>Python</li></ul>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#work" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Web Development</span><b>✦</b><span class="outline">E-commerce</span><b>✦</b><span>Machine Learning</span><b>✦</b><span class="outline">UI Design</span><b>✦</b><span>Research</span><b>✦</b><span class="outline">Leadership</span><b>✦</b>
+        <span>Web Development</span><b>✦</b><span class="outline">E-commerce</span><b>✦</b><span>Machine Learning</span><b>✦</b><span class="outline">UI Design</span><b>✦</b><span>Research</span><b>✦</b><span class="outline">Leadership</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ================= WORK ================= -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <div>
+            <p class="sec-head__label"><span>01</span>Selected work</p>
+            <h2 class="sec-head__title">Things I've <em class="grad">built</em></h2>
+          </div>
+          <p class="sec-head__desc">Four projects across e-commerce, social impact, research and AI. Each one started with a real problem and real users.</p>
+        </header>
+
+        <div class="stack" id="stack">
+          <!-- Trenzy -->
+          <article class="pcard" style="--i:0; --c1:#ff8fa3; --c2:#ffc59a;">
+            <div class="pcard__info">
+              <div class="pcard__top"><span class="pcard__idx">01 <i>/ 04</i></span><span class="pcard__cat">E-commerce · Full-stack</span></div>
+              <h3 class="pcard__title">Trenzy</h3>
+              <p class="pcard__tag">A modern Bangladeshi e-commerce website for browsing, filtering and buying products online.</p>
+              <dl class="pcard__case">
+                <div><dt>What it does</dt><dd>Product search and filtering, shopping cart, multiple payment options, and an admin dashboard for managing products and orders.</dd></div>
+                <div><dt>My role</dt><dd>Co-developer. Interface development, functionality testing and project delivery.</dd></div>
+              </dl>
+              <ul class="tags"><li>MERN stack</li><li>React.js</li><li>MongoDB</li><li>TailwindCSS</li></ul>
+              <a class="link-arrow" href="https://github.com/Lamia-Mim/Trenzy" target="_blank" rel="noopener">
+                View on GitHub <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="pcard__visual" aria-hidden="true">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>trenzy</span></div>
+                <div class="mock__body shop">
+                  <div class="shop__top"><b></b><span></span><em></em></div>
+                  <div class="shop__chips"><i class="on"></i><i></i><i></i><i></i></div>
+                  <div class="shop__grid">
+                    <div><s></s><p></p><p class="short"></p></div>
+                    <div><s></s><p></p><p class="short"></p></div>
+                    <div><s></s><p></p><p class="short"></p></div>
+                    <div><s></s><p></p><p class="short"></p></div>
+                    <div><s></s><p></p><p class="short"></p></div>
+                    <div><s></s><p></p><p class="short"></p></div>
+                  </div>
+                </div>
+              </div>
+              <div class="float float--a"><span class="float__ico">✓</span>Added to cart</div>
+              <div class="float float--b"><span class="float__ico">◎</span>Order dashboard</div>
+            </div>
+          </article>
+
+          <!-- ElderEase -->
+          <article class="pcard" style="--i:1; --c1:#6fe3b8; --c2:#9fd4ff;">
+            <div class="pcard__info">
+              <div class="pcard__top"><span class="pcard__idx">02 <i>/ 04</i></span><span class="pcard__cat">Social impact · Full-stack</span></div>
+              <h3 class="pcard__title">ElderEase</h3>
+              <p class="pcard__tag">A support platform that connects senior citizens with volunteers and helps them learn technology.</p>
+              <dl class="pcard__case">
+                <div><dt>What it does</dt><dd>Matches elderly users with volunteers who can help, plus a technology-learning hub made for first-time users.</dd></div>
+                <div><dt>My role</dt><dd>UI design, data organization and development.</dd></div>
+              </dl>
+              <ul class="tags"><li>React.js</li><li>MongoDB</li><li>Firebase</li><li>UI design</li></ul>
+              <a class="link-arrow" href="https://github.com/Lamia-Mim" target="_blank" rel="noopener">
+                See GitHub profile <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="pcard__visual" aria-hidden="true">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>elderease</span></div>
+                <div class="mock__body elder">
+                  <div class="elder__hello"></div>
+                  <div class="elder__sub"></div>
+                  <div class="elder__cards">
+                    <div><span class="ico">♡</span><p></p><p class="short"></p></div>
+                    <div><span class="ico">✦</span><p></p><p class="short"></p></div>
+                  </div>
+                  <div class="elder__btn"></div>
+                </div>
+              </div>
+              <div class="float float--a"><span class="float__ico">♡</span>Volunteer matched</div>
+              <div class="float float--b"><span class="float__ico">▶</span>Learning hub</div>
+            </div>
+          </article>
+
+          <!-- Research -->
+          <article class="pcard" style="--i:2; --c1:#b69cff; --c2:#7d8bff;">
+            <div class="pcard__info">
+              <div class="pcard__top"><span class="pcard__idx">03 <i>/ 04</i></span><span class="pcard__cat">Research · Machine learning</span></div>
+              <h3 class="pcard__title pcard__title--long">A Data-Driven Study of Elder Abuse in Bangladesh</h3>
+              <p class="pcard__tag">Finding vulnerability and abuse patterns with machine learning, then turning the findings into a tool people can use.</p>
+              <dl class="pcard__case">
+                <div><dt>Research</dt><dd>Analyzed 209 elder-abuse cases across 49 districts using Python, statistical analysis, clustering and machine learning.</dd></div>
+                <div><dt>Outcome</dt><dd>A Bangla voice-guided web platform for abuse-risk assessment and access to relevant information.</dd></div>
+              </dl>
+              <ul class="tags"><li>Python</li><li>Clustering</li><li>Statistics</li><li>Voice UI</li></ul>
+            </div>
+            <div class="pcard__visual pcard__visual--dark" aria-hidden="true">
+              <div class="stats">
+                <div class="stat"><b data-count="209">0</b><span>cases analyzed</span></div>
+                <div class="stat"><b data-count="49">0</b><span>districts covered</span></div>
+                <svg class="scatter" viewBox="0 0 220 110">
+                  <g class="c1"><circle cx="34" cy="34" r="6"/><circle cx="50" cy="24" r="4"/><circle cx="42" cy="48" r="7"/><circle cx="60" cy="40" r="3.5"/><circle cx="26" cy="54" r="4.5"/></g>
+                  <g class="c2"><circle cx="112" cy="72" r="6"/><circle cx="128" cy="84" r="4"/><circle cx="102" cy="88" r="7"/><circle cx="122" cy="62" r="3.5"/><circle cx="138" cy="74" r="5"/></g>
+                  <g class="c3"><circle cx="180" cy="30" r="4.5"/><circle cx="194" cy="44" r="6.5"/><circle cx="172" cy="48" r="3.5"/><circle cx="198" cy="24" r="4"/></g>
+                </svg>
+              </div>
+              <div class="float float--a"><span class="float__ico">◆</span>3 clusters found</div>
+            </div>
+          </article>
+
+          <!-- Token Tax -->
+          <article class="pcard" style="--i:3; --c1:#9fd4ff; --c2:#b69cff;">
+            <div class="pcard__info">
+              <div class="pcard__top"><span class="pcard__idx">04 <i>/ 04</i></span><span class="pcard__cat">AI research · Language fairness</span></div>
+              <h3 class="pcard__title">Token Tax</h3>
+              <p class="pcard__tag">A study and live tool showing how much more AI language models charge for Bangla than for English.</p>
+              <dl class="pcard__case">
+                <div><dt>What it does</dt><dd>Compares 8 model tokenizers (GPT, Llama, Gemma, Qwen and more) on parallel Bangla and English text, in Bangla or English, and shows how each one cuts Bangla into pieces.</dd></div>
+                <div><dt>Finding</dt><dd>On 1,012 professionally translated sentences (FLORES-200), GPT-4 needs 5.8× more tokens for Bangla; GPT-4o, 1.7×. Code, data and report are public.</dd></div>
+              </dl>
+              <ul class="tags"><li>NLP</li><li>Research</li><li>Statistics</li><li>JavaScript</li><li>Hugging Face</li></ul>
+              <a class="link-arrow" href="https://lamia-mim.github.io/token-tax/" target="_blank" rel="noopener">
+                Try it live <span aria-hidden="true">→</span>
+              </a>
+              <a class="link-arrow" href="https://github.com/Lamia-Mim/token-tax/tree/main/research" target="_blank" rel="noopener">
+                Read the research <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div class="pcard__visual" aria-hidden="true">
+              <div class="mock">
+                <div class="mock__bar"><i></i><i></i><i></i><span>token-tax</span></div>
+                <div class="mock__body tt">
+                  <div class="tt__chips"><span>এ</span><span>ক</span><span>ু</span><span>শ</span><span>ে</span></div>
+                  <ul class="tt__bars">
+                    <li style="--w:100%"><b>GPT-4</b><i></i><em>5.80×</em></li>
+                    <li style="--w:99%"><b>Llama 3</b><i></i><em>5.75×</em></li>
+                    <li style="--w:29%"><b>GPT-4o</b><i></i><em>1.69×</em></li>
+                    <li style="--w:20%"><b>BLOOM</b><i></i><em>1.17×</em></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="float float--a"><span class="float__ico">৳</span>5.8× more tokens</div>
+              <div class="float float--b"><span class="float__ico">▶</span>Runs in browser</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="more reveal">
+          <p class="more__label">More on GitHub</p>
+          <a class="more__item spot" href="https://github.com/Lamia-Mim/C-Program_Library_Management_System" target="_blank" rel="noopener">
+            <span class="more__title">Library Management System</span>
+            <span class="more__meta">C · Console application</span>
+            <span class="more__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="more__item spot" href="https://github.com/Lamia-Mim" target="_blank" rel="noopener">
+            <span class="more__title">All repositories</span>
+            <span class="more__meta">github.com/Lamia-Mim</span>
+            <span class="more__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <div>
+            <p class="sec-head__label"><span>02</span>About me</p>
+            <h2 class="sec-head__title">Technology, with <em class="grad">people</em> in mind</h2>
+          </div>
+          <p class="sec-head__desc">A little about how I work, and what I do beyond writing code.</p>
+        </header>
+
+        <p class="statement" id="statement">
+          I enjoy turning real problems into clean, usable products, from a full-stack online store to a platform that
+          helps senior citizens learn technology. Every project starts with one question: who is this for, and what
+          would make it easier for them? I bring the same care to the teams I lead and work with.
+        </p>
+
+        <div class="beyond">
+          <article class="bcard spot reveal">
+            <span class="bcard__num">01</span>
+            <svg class="bcard__ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 19c.6-3.2 3-5 6-5s5.4 1.8 6 5"/><circle cx="17" cy="9" r="2.4"/><path d="M16.5 14c2.4.2 4 1.8 4.5 4.5"/></svg>
+            <h3>Team leader</h3>
+            <p>Led academic project teams: coordinated tasks, managed deadlines, resolved issues and presented to faculty.</p>
+          </article>
+          <article class="bcard spot reveal">
+            <span class="bcard__num">02</span>
+            <svg class="bcard__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 5.5 14.5 4 17.5 4 20 5.5V19c-2.5-1.5-5.5-1.5-8 0-2.5-1.5-5.5-1.5-8 0z"/><path d="M12 5.5V19"/></svg>
+            <h3>Private tutor</h3>
+            <p>Tutored school and college students, planning lessons and managing schedules.</p>
+          </article>
+          <article class="bcard spot reveal">
+            <span class="bcard__num">03</span>
+            <svg class="bcard__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>
+            <h3>Events</h3>
+            <p>Coordination, content design and video editing for academic, cultural and social events.</p>
+          </article>
+          <article class="bcard spot reveal">
+            <span class="bcard__num">04</span>
+            <svg class="bcard__ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+            <h3>Community</h3>
+            <p>Food and clothing distribution, fundraising initiatives and blood donation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <div>
+            <p class="sec-head__label"><span>03</span>Skills</p>
+            <h2 class="sec-head__title">My <em class="grad">toolkit</em></h2>
+          </div>
+          <p class="sec-head__desc">The technologies, tools and people skills I bring to a team.</p>
+        </header>
+
+        <div class="skills">
+          <article class="scard scard--wide spot reveal">
+            <div class="scard__head"><h3>Technical</h3><span>Code</span></div>
+            <ul class="tags tags--lg"><li>React.js</li><li>MongoDB</li><li>Firebase</li><li>JavaScript</li><li>Python</li><li>C++</li><li>Java</li><li>Git &amp; GitHub</li><li>Machine learning</li></ul>
+          </article>
+          <article class="scard spot reveal">
+            <div class="scard__head"><h3>Tools</h3><span>Daily</span></div>
+            <ul class="tags tags--lg"><li>MS Word</li><li>Excel</li><li>PowerPoint</li><li>Canva</li><li>Video editing</li></ul>
+          </article>
+          <article class="scard scard--wide spot reveal">
+            <div class="scard__head"><h3>People</h3><span>Soft skills</span></div>
+            <ul class="tags tags--lg"><li>Team leadership</li><li>Presentation</li><li>Report writing</li><li>Time management</li><li>Event organization</li><li>Adaptability</li></ul>
+          </article>
+          <article class="scard spot reveal">
+            <div class="scard__head"><h3>Languages</h3><span>Spoken</span></div>
+            <ul class="langs">
+              <li><span>Bangla</span><small>Native</small><i style="--w:100%"></i></li>
+              <li><span>English</span><small>Fluent</small><i style="--w:88%"></i></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <div>
+            <p class="sec-head__label"><span>04</span>Education</p>
+            <h2 class="sec-head__title">Where I <em class="grad">learned</em></h2>
+          </div>
+          <p class="sec-head__desc">My academic path, from school in Motijheel to a CSE degree at North South University.</p>
+        </header>
+
+        <ol class="timeline" id="timeline">
+          <li class="tl reveal">
+            <span class="tl__year">2026</span>
+            <div class="tl__card spot">
+              <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+              <p>North South University, Dhaka</p>
+              <span class="tl__pill">CGPA 3.33</span>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__year">2020</span>
+            <div class="tl__card spot">
+              <h3>Higher Secondary Certificate</h3>
+              <p>Ideal School and College, Motijheel · Science</p>
+              <span class="tl__pill">GPA 5.00</span>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__year">2018</span>
+            <div class="tl__card spot">
+              <h3>Secondary School Certificate</h3>
+              <p>Ideal School and College, Motijheel · Science</p>
+              <span class="tl__pill">GPA 5.00</span>
+            </div>
+          </li>
+          <li class="tl reveal">
+            <span class="tl__year">Award</span>
+            <div class="tl__card spot">
+              <h3>General Scholarship</h3>
+              <p>Junior School Certificate (JSC) Examination</p>
+              <span class="tl__pill">Scholarship</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="contact reveal">
+          <div class="aurora aurora--contact" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="sec-head__label"><span>05</span>Contact</p>
+          <h2 class="contact__title">Let's create something <em class="grad">remarkable</em> together.</h2>
+          <p class="contact__lead">I'm open to roles and projects in IT, e-commerce and web development. The quickest way to reach me is email.</p>
+
+          <a class="hello" href="mailto:lamiaislammim.work@gmail.com" data-magnetic>
+            <span>Say hello</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+          </a>
+
+          <div class="contact__email">
+            <span>lamiaislammim.work@gmail.com</span>
+            <button class="copy" id="copyEmail" data-email="lamiaislammim.work@gmail.com">Copy</button>
+          </div>
+
+          <ul class="socials">
+            <li><a href="https://www.linkedin.com/in/lamia-islam-mim/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/Lamia-Mim" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+            <li><a href="assets/Lamia_Islam_Mim_CV.pdf" download>Resume <span aria-hidden="true">↓</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <p>© <span id="year">2026</span> Lamia Islam Mim</p>
+      <p>Designed &amp; built in Dhaka</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
